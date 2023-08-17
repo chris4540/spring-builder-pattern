@@ -19,9 +19,11 @@ public class PointBuilder implements ApplicationContextAware {
     private PointHistoryService pointHistoryService;
 
     private static final AtomicInteger instanceCounter = new AtomicInteger(0);
-    int x;
-    int y;
-    int z;
+
+    // build args
+    private int x;
+    private int y;
+    private int z;
 
     public PointBuilder() {
         instanceCounter.incrementAndGet();
